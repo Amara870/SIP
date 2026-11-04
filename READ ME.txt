@@ -1,0 +1,36 @@
+
+
+HTML Folder:
+    index.html - index/homepage file
+        To Do: what's in it and what it does, style scroll buttons and Form
+        notes: make sure to use "../" in the beginning of the file path to reference Parent folder and HTML folder
+
+    About_Us - About us page file
+        To Do: what's in it and what it does, arcitechure pictures of current vs desired, lily's pad, community impact, define innovation
+        notes:
+
+    designer.html - Window Decal Designer file
+        To Do: what's in it and what it does
+        notes:
+
+CSS Folder:
+    style.css - index/homepage stylesheet
+        To Do: what's in it and what it does, reorder element stylings, redesign/optimize containers/tags, 
+        notes: row1 and row2 images are in different containers because putting them in the same container made them display in two clumps of four (2 4x4's), rather than 2 rows of 4.
+
+    About Us stylesheet
+        To Do: what's in it and what it does
+        notes:
+
+    desginerCSS.css - Window Decal Designer stylesheet
+        To Do: what's in it and what it does
+        notes:
+
+images Folder:
+    slideshow example decal images
+    notes: make sure to use "../" in the beginning of the file path to reference Parent folder and HTML folder
+
+JavaScript Folder:
+    script.js - index/homepage JavaScript file
+        To Do: what's in it and what it does
+        notes: make sure to use "../" in the beginning of the file path to reference Parent folder and HTML folder

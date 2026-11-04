@@ -1,0 +1,146 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
+        <link rel="stylesheet" href="SIP/CSS/main.css">
+        <link rel="stylesheet" href="SIP/CSS/index.css">
+        <script src="SIP/JavaScript/script.js" defer></script>
+        <!-- Author: Amara Hill-->
+        <!-- Published: August 2026-->
+    </head>
+
+    <br><br>
+    <body class="grid-container">
+        <header class="header">
+            <!--Add logo Safe "red" Wings-->
+            <div class="inner_header">
+                <div class="title_container">
+                    <!--If logo is added change to just Window Decals-->
+                    <h1>Safe Wings Window Decals</h1>
+                </div>
+                
+                <!--To Do: links to info,  murals, designer, about us-->
+                <ul class="nav">
+                    <!--Downloaded file of standards-->
+                    <a href="birdsafe_designguidelines_en.pdf" target="_blank"><li>Safety Standards</li></a>
+                    <a href="SIP/HTML/designer.html"><li>Artist Works</li></a>
+                    <a href="SIP/HTML/About_Us.html"><li>About Us</li></a>
+                </ul>
+            </div>
+        </header>
+
+        <!--Change class and ID tags-->
+        <secton class="murals">
+            <div class="slideshow_container">
+                <!-- Left Arrow -->
+                <button class="slideshow-buttons" aria-label="Previous" onclick="prevSlide()"><span id="chevron-right"></span></button>
+                <!--Sample images to select from, past projects, artists' works-->
+                <div class="slideshow">
+                    <!--To Do: Caption - Templates-->
+                    <!--Automatic slideshow that stops on hover-->
+                    <a href="SIP/HTML/designer.html"><img id="slides" src="" alt="Example templates: Single dotted mural, repeating patterns" style="width: 600px; height: 350px;"></a>
+                </div>
+                <!-- Right Arrow -->
+                <button class="slideshow-buttons" aria-label="Next" onclick="nextSlide()"><span id="chevron-left"></button>
+            </div>
+
+            <br><br>
+
+            <div class="gallery" id="artists-works">
+                <!--To Do: links to background of each, artist, designer options-->
+                <div class="gallery-item">
+                    <img src="SIP/Images/logo.png" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/dots.png" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/dotted mural.jpg" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/repeating_logo.jpg" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/elephant.jpg" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/jellyfish.jpg" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/cactus.jpg" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="SIP/Images/pattern.png" alt="Chase Starzinsky" width="250px" height="150px">
+                </div>
+            </div>
+        </secton>
+
+        <br><br>
+
+        <aside class="form-container">
+            <h2>Get In Contact With Us!</h2>
+            <form action="mailto:thebackup10000@gmail.com" method="post" enctype="text/plain" name="contact-request" id="form-input">
+                <div class="form-group">
+                    <label for="txtName/Company">Name/Company</label>
+                    <input type="text" id="txtName/Company" name="lblName/Company" placeholder="Amara Jane">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtDesignerChoice">What kind of decal are you looking for?</label>
+                    <input type="text" id="txtDesignerChoice" name="lblDesignerChoice" placeholder="Dotted Mural, Repeating pattern, Etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtEmail">What's a good email for you?</label>
+                    <input type="text" id="txtEmail" name="lblEmail" placeholder="AmaraEmail@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="txtComment">Any additional comments or questions?</label>
+                    <input type="text" id="txtComment" name="lblComment" placeholder="">
+                </div>
+
+                <!--Format and send info to email-->
+                <button id="submit-btn" type="button">Submit!</button>
+            </form>
+        </aside>      
+    </body>
+
+    <footer class="footer">
+    <!--Add logo Safe "red" Wings-->
+        <div class="inner_footer">
+            <div class="footer_container">
+                <!--If logo is added change to just Window Decals-->
+                <h1>Socials</h1>
+            </div>
+            
+            <!--To Do: links to info,  murals, designer, about us-->
+            <ul class="socials">
+                <!--Author's socials and affiliations-->
+                <a href="https://www.youtube.com/@AmaraHill-s2c" target="_blank"><li>Youtube</li></a>
+                <a href="https://www.instagram.com/agen.t992?igsh=MW93YWtmZDdzanBwcg==" target="_blank"><li>Instagram</li></a>
+            </ul>
+
+            <ul class="works">
+                <a href="https://github.com/Amara870" target="_blank"><li>Github</li></a>
+                <a href="https://substack.com/@amarahill" target="_blank"><li>Substack</li></a>
+                <a href="https://amarah0937.wixsite.com/codecraft-studio" target="_blank"><li>Portfolio</li></a>
+
+            </ul>
+
+            <ul class="contacts">
+                <li>ahill87105@uat.edu</li>
+                <li>University of Advancing Technology</li>
+            </ul>
+        </div>
+    </footer>
+</html>

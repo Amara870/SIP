@@ -1,0 +1,130 @@
+
+/*Reset default behaviors*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* HEADER STYLING */
+/* TITLE, NAVIGATION*/
+
+/*Header class container to define block display*/
+.header {
+    width: 100%;
+    height: 100px;
+    display: block;
+    background-color: rgb(89, 89, 238);
+}
+/*Inner container to align content*/
+.inner_header, .inner_footer {
+    width: 1000px;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+/*Title container to align title*/
+.title_container, .footer_container {
+    height: 100%;
+    display: table;
+    float: left;
+}
+/*H1 styling*/
+.title_container h1, .footer_container h1 {
+    padding: 10px;
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 40px;
+}
+/*Navigation container to hold content*/
+.nav {
+    float: right;
+    height: 100%;
+    font-size: 18px;
+}
+/*Navigation a tag styling and centering*/
+.nav a {
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    color: white;
+}
+/*Add padding to the end of the list to create space from the end of the container*/
+.nav a:last-child {
+    padding-right: 10px;;
+}
+/*Navigation list styling and centering*/
+.nav a li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+
+
+/* MAIN CONTENT STYLING */
+/* BODY, MURAL, FORM */
+
+/* Body Styling*/
+body {
+    background-color: pink;
+    position: relative;
+}
+
+/* Form styling*/
+/* Set form container to align items */
+.form-container {
+    align-items: right;
+    max-width: 450px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px grey;
+}
+
+/* Seperate heading from content*/
+.form-container h2 {
+    margin-bottom: 20px;
+}
+
+/* Give contents space between each other*/
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Style inputs labels */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+/* Style input boxes */
+.form-group input[type="text"], 
+.form-group input[type="email"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px 4px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: rgb(245, 238, 231);
+    color:#333;
+}
+
+/* Style submit button */
+#submit-btn{
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+

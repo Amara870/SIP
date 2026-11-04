@@ -1,0 +1,130 @@
+/*Set Murals section to grid display to better center elements*/
+.slideshow_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    margin: 0 auto;
+} 
+
+/*Give the slideshow a nice contrasting shadow background*/
+.slideshow {
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 2%;
+}
+
+#slides {
+    box-shadow: 0 0 20px black;
+}
+
+.slideshow-buttons {
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+}
+
+#chevron-right {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(135deg);
+  vertical-align: middle;
+  margin-bottom: 4px; /* Adjust alignment to text */
+}
+
+#chevron-left {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(-45deg);
+  vertical-align: middle;
+  margin-bottom: 4px; /* Adjust alignment to text */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px;
+  grid-template-rows: auto 1fr 250px;
+  gap: 15px;
+  height: 100vh;
+
+  grid-template-areas: 
+    "header header header"
+    "murals murals sidebar"
+    "footer footer footer";
+  min-height: 100vh;
+}
+
+.header {grid-area: header;}
+.murals {grid-area: murals;}
+.form-container {grid-area: sidebar;}
+.footer {grid-area: footer;}
+
+.murals {
+  grid-area: murals; 
+  width: 100%;       /* Forces the element to fill the two-column span */
+  display: block;
+}
+
+.form-container{
+    max-height: 600px;
+}
+
+.gallery {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+  background-color: beige;
+  box-shadow: 0 0 10px black;
+}
+
+.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+.gallery-item img{
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER STYLING */  
+/* footer class container to define block display */
+.footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: rgb(89, 89, 238);
+    position: absolute;
+    bottom: 0;
+} 
+/*Inner container to center content*/
+.inner_footer {
+    display: flex;
+    justify-content: space-between; /* Spreads sections out evenly */
+}
+/* link text styling */
+.works a, .socials a, .contacts li {
+    height: auto;
+    display: table;
+    color: white;
+}
+/* link hover styling */
+.nav a:hover, .socials a:hover, .works a:hover, .contacts a:hover {
+    color:rgb(1, 1, 97);
+    text-decoration: underline;
+} 

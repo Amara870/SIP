@@ -1,0 +1,112 @@
+
+.header {grid-area: header;}
+.text-container {grid-area: content;}
+.gallery1 {grid-area: gallery1;}
+.gallery2 {grid-area: gallery2;}
+.gallery3 {grid-area: gallery3;}
+.footer {grid-area: footer;}
+
+body{
+  display: grid;
+  grid-template-columns: 1fr 1fr 250px 250px;
+  grid-template-rows: auto 600px 250px 250px;
+  gap: 15px;
+  position: relative;
+  height: 100vh;
+
+  grid-template-areas: 
+    "header header header header"
+    "content content gallery1 gallery2"
+    "gallery3 gallery3 gallery1 gallery2"
+    "footer footer footer footer";
+}
+
+.text-container {
+    max-width: 750px;
+    max-height: 600px;
+    border: 3px solid black;
+    background-color: rgb(190, 149, 228);
+    margin: 0 auto; 
+}
+
+.text-container p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    padding: 20px;
+}
+
+.gallery1, .gallery2, .gallery3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 10%;
+}
+
+.gallery1-item, .gallery2-item, .gallery3-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+  background-color: beige;
+  box-shadow: 0 0 10px black;
+}
+
+.gallery1-item:hover, .gallery2-item:hover, .gallery3-item:hover {
+  border: 1px solid #777;
+}
+
+.gallery1-item img, .gallery2-item img, .gallery3-item img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery1-item div.desc, .gallery2-item div.desc, .gallery3-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery3 {
+    padding: 20px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    min-width: 600px;
+}
+
+.gallery3-item img {
+    height: 150px;
+}
+
+.gallery3 h2 {
+    display: block;
+    margin: 0 auto;
+}
+
+/* FOOTER STYLING */  
+/* footer class container to define block display */
+.footer {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: rgb(89, 89, 238);
+    position: absolute;
+    bottom: 0;
+} 
+/*Inner container to center content*/
+.inner_footer {
+    display: flex;
+    justify-content: space-between; /* Spreads sections out evenly */
+}
+/* link text styling */
+.works a, .socials a, .contacts li {
+    height: auto;
+    display: table;
+    color: white;
+}
+/* link hover styling */
+.nav a:hover, .socials a:hover, .works a:hover, .contacts a:hover {
+    color:rgb(1, 1, 97);
+    text-decoration: underline;
+} 
